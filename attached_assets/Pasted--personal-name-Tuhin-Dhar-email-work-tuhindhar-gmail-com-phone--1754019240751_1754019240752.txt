@@ -1,0 +1,99 @@
+{
+  "personal": {
+    "name": "Tuhin Dhar",
+    "email": "work.tuhindhar@gmail.com",
+    "phone": "+91 7002282099",
+    "linkedin": "https://www.linkedin.com/in/tuhin000",
+    "github": "https://github.com/tuhin-dhar"
+  },
+  "work_experience": [
+    {
+      "title": "Tech Lead (Founding Team)",
+      "company": "Eastri",
+      "duration": "Apr 2025 – Present",
+      "responsibilities": [
+        "Built and maintained the backend using Node.js, PostgreSQL, Redis, WebSockets, RabbitMQ",
+        "Led a 30-member cross-functional team across frontend, backend, Flutter, and design",
+        "Developed Eastri consumer & partner apps in Flutter and contributed to React-based web modules",
+        "Defined backend roadmap, enforced best practices, and ensured high delivery velocity",
+        "Collaborated with product, design, and operations to align tech with business goals"
+      ]
+    },
+    {
+      "title": "Frontend Engineer Intern",
+      "company": "Odisoft Technologies",
+      "duration": "Apr 2025 – May 2025",
+      "responsibilities": [
+        "Developed Importkey SaaS frontend using React, TypeScript, Tailwind CSS, and Vite",
+        "Converted product requirements into production-ready interactive features",
+        "Managed CI/CD workflows with GitHub for smooth feature delivery"
+      ]
+    },
+    {
+      "title": "Full Stack Engineer Intern",
+      "company": "Astraeus Next Gen",
+      "duration": "Feb 2025 – Apr 2025",
+      "responsibilities": [
+        "Developed responsive React + Tailwind CSS interfaces with focus on UX",
+        "Built data visualization dashboards using Recharts",
+        "Implemented REST APIs with Node.js and Express"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Loopdesk",
+      "description": "Team & Project Management Website with multi-workspace task tracking and analytics",
+      "link": "https://loopdesk-zeta.vercel.app/",
+      "features": [
+        "Kanban, Table, and Calendar views for task management",
+        "Role-based team access (Admin & Member)",
+        "Drag & Drop Kanban board",
+        "Advanced analytics and reporting"
+      ],
+      "tech_stack": ["Next.js", "Hono", "TypeScript", "Appwrite", "TanStack Query", "Radix UI", "Tailwind CSS"]
+    },
+    {
+      "name": "Grem",
+      "description": "Real-time video calling web app with interactive UI and secure authentication",
+      "features": [
+        "Real-time video calls with Stream Video SDK",
+        "Interactive dialogs, dropdowns, and toasts",
+        "Secure authentication using Clerk"
+      ],
+      "tech_stack": ["Next.js 14", "Stream Video SDK", "Radix UI", "Tailwind CSS", "Lucide Icons"]
+    },
+    {
+      "name": "Opal Oases",
+      "description": "Hotel booking platform with real-time availability, payments, and reviews",
+      "features": [
+        "Secure payments with Stripe",
+        "JWT-based authentication",
+        "Cloudinary for image uploads"
+      ],
+      "tech_stack": ["React", "Node.js", "MongoDB"]
+    }
+  ],
+  "skills": {
+    "languages": ["JavaScript (ES6+)", "TypeScript", "Go", "SQL", "Dart"],
+    "frontend": ["React.js", "Next.js", "Flutter", "TailwindCSS", "Radix UI"],
+    "backend": ["Node.js", "Express.js", "Hono", "tRPC"],
+    "state_and_data": ["TanStack Query", "React Hook Form", "Riverpod"],
+    "messaging_and_queues": ["RabbitMQ (RPC, pub/sub, DLQ)", "Redis Streams"],
+    "database_and_orm": ["PostgreSQL", "Prisma", "MongoDB", "Redis", "WebSockets"],
+    "other_tools": ["Docker", "Clerk Auth", "Axios", "Recharts", "TanStack Table"]
+  },
+  "education": [
+    {
+      "institution": "Sikkim Manipal Institute of Technology, Majhitar, Sikkim",
+      "degree": "B.Tech in Computer Science and Technology",
+      "year": "2026 (Expected)",
+      "cgpa": "8.25 (Till 5th Sem)"
+    },
+    {
+      "institution": "NPS International School, Guwahati, Assam",
+      "class_x": "93.4% (2019)",
+      "class_xii": "91.8% (2021)"
+    }
+  ]
+}
