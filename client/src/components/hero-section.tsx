@@ -62,7 +62,7 @@ export default function HeroSection() {
             </div>
             
             <motion.div 
-              className="flex space-x-6"
+              className="flex flex-wrap gap-4 justify-center lg:justify-start"
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -86,6 +86,16 @@ export default function HeroSection() {
               >
                 Get In Touch
               </motion.button>
+              <motion.a
+                href="/attached_assets/Tuhin_Dhar_Resume_June_2025_1754021633685.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-transparent border border-slate-gray text-slate-gray font-semibold rounded-lg transition-all duration-300 hover:bg-slate-gray hover:text-rich-dark"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Get Resume
+              </motion.a>
             </motion.div>
           </motion.div>
           

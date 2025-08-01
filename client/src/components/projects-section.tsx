@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { CheckCircle, ExternalLink, Code, Calendar, Video, Hotel } from "lucide-react";
+import { CheckCircle, ExternalLink, Code } from "lucide-react";
+import loopdeskLogo from "@assets/loodesk logo_1754021674302.png";
+import gremLogo from "@assets/grem logo_1754021674302.png";
+import opalOasesLogo from "@assets/opal oases_1754021757529.png";
 
 export default function ProjectsSection() {
   const ref = useRef(null);
@@ -12,7 +15,7 @@ export default function ProjectsSection() {
       name: "Loopdesk",
       description: "Team & Project Management Website with multi-workspace task tracking and analytics",
       link: "https://loopdesk-zeta.vercel.app/",
-      icon: Calendar,
+      logo: loopdeskLogo,
       features: [
         "Kanban, Table, and Calendar views",
         "Role-based team access",
@@ -24,7 +27,7 @@ export default function ProjectsSection() {
     {
       name: "Grem",
       description: "Real-time video calling web app with interactive UI and secure authentication",
-      icon: Video,
+      logo: gremLogo,
       features: [
         "Real-time video calls with Stream SDK",
         "Interactive dialogs and toasts",
@@ -36,7 +39,7 @@ export default function ProjectsSection() {
     {
       name: "Opal Oases",
       description: "Hotel booking platform with real-time availability, payments, and reviews",
-      icon: Hotel,
+      logo: opalOasesLogo,
       features: [
         "Secure payments with Stripe",
         "JWT-based authentication",
@@ -78,12 +81,17 @@ export default function ProjectsSection() {
                 borderColor: "rgba(34, 211, 238, 0.3)"
               }}
             >
-              <div className={`h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
+              <div className={`h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden`}>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
+                  className="w-full h-full flex items-center justify-center p-8"
                 >
-                  <project.icon className="text-6xl text-bright-cyan" />
+                  <img 
+                    src={project.logo} 
+                    alt={`${project.name} logo`} 
+                    className="max-w-full max-h-full object-contain filter brightness-110"
+                  />
                 </motion.div>
               </div>
               <div className="p-6">
