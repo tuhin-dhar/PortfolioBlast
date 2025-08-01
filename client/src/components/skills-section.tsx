@@ -55,7 +55,7 @@ export default function SkillsSection() {
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.category}
-                className="group glass-effect rounded-2xl overflow-hidden transition-all duration-500 min-h-[280px] flex flex-col"
+                className="group glass-effect rounded-2xl overflow-hidden transition-all duration-500 h-[320px] flex flex-col"
                 initial={{ y: 50, opacity: 0 }}
                 animate={isInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
                 transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
@@ -66,7 +66,7 @@ export default function SkillsSection() {
                 }}
               >
                 {/* Header with icon and gradient */}
-                <div className={`h-24 bg-gradient-to-br ${category.gradient} flex items-center justify-center`}>
+                <div className={`h-24 bg-gradient-to-br ${category.gradient} flex items-center justify-center flex-shrink-0`}>
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
@@ -76,33 +76,35 @@ export default function SkillsSection() {
                 </div>
                 
                 {/* Content */}
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-2xl font-bold text-bright-cyan mb-6 text-center group-hover:text-cyan-300 transition-colors duration-300">
-                    {category.category}
-                  </h3>
-                  <div className="flex flex-wrap justify-center gap-3 flex-1 items-start">
-                    {category.skills.map((skill, skillIndex) => (
-                      <motion.span
-                        key={skill}
-                        className="px-3 py-2 bg-bright-cyan/20 text-bright-cyan text-sm rounded-full border border-bright-cyan/30 cursor-pointer transition-all duration-300"
-                        initial={{ scale: 0, opacity: 0 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
-                        transition={{ 
-                          duration: 0.4, 
-                          delay: categoryIndex * 0.2 + skillIndex * 0.1 
-                        }}
-                        whileHover={{
-                          scale: 1.05,
-                          backgroundColor: "rgba(34, 211, 238, 0.3)",
-                          borderColor: "var(--bright-cyan)",
-                          boxShadow: "0 10px 25px rgba(34, 211, 238, 0.2)",
-                          y: -2
-                        }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        {skill}
-                      </motion.span>
-                    ))}
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-bright-cyan mb-6 text-center group-hover:text-cyan-300 transition-colors duration-300">
+                      {category.category}
+                    </h3>
+                    <div className="flex flex-wrap justify-center gap-3">
+                      {category.skills.map((skill, skillIndex) => (
+                        <motion.span
+                          key={skill}
+                          className="px-3 py-2 bg-bright-cyan/20 text-bright-cyan text-sm rounded-full border border-bright-cyan/30 cursor-pointer transition-all duration-300"
+                          initial={{ scale: 0, opacity: 0 }}
+                          animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
+                          transition={{ 
+                            duration: 0.4, 
+                            delay: categoryIndex * 0.2 + skillIndex * 0.1 
+                          }}
+                          whileHover={{
+                            scale: 1.05,
+                            backgroundColor: "rgba(34, 211, 238, 0.3)",
+                            borderColor: "var(--bright-cyan)",
+                            boxShadow: "0 10px 25px rgba(34, 211, 238, 0.2)",
+                            y: -2
+                          }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          {skill}
+                        </motion.span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </motion.div>
