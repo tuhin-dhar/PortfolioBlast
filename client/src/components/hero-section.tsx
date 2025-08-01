@@ -87,9 +87,8 @@ export default function HeroSection() {
                 Get In Touch
               </motion.button>
               <motion.a
-                href="/attached_assets/Tuhin_Dhar_Resume_June_2025_1754021633685.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/resume.pdf"
+                download="Tuhin_Dhar_Resume.pdf"
                 className="px-8 py-4 border border-bright-cyan text-bright-cyan font-semibold rounded-lg transition-all duration-300 hover:bg-bright-cyan hover:text-rich-dark"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
