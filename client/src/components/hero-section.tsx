@@ -90,7 +90,7 @@ export default function HeroSection() {
                 href="/attached_assets/Tuhin_Dhar_Resume_June_2025_1754021633685.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-transparent border border-slate-gray text-slate-gray font-semibold rounded-lg transition-all duration-300 hover:bg-slate-gray hover:text-rich-dark"
+                className="px-8 py-4 border border-bright-cyan text-bright-cyan font-semibold rounded-lg transition-all duration-300 hover:bg-bright-cyan hover:text-rich-dark"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

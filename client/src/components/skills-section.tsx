@@ -51,11 +51,11 @@ export default function SkillsSection() {
         </motion.div>
         
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.category}
-                className="group glass-effect rounded-2xl overflow-hidden transition-all duration-500"
+                className="group glass-effect rounded-2xl overflow-hidden transition-all duration-500 min-h-[280px] flex flex-col"
                 initial={{ y: 50, opacity: 0 }}
                 animate={isInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
                 transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
@@ -76,11 +76,11 @@ export default function SkillsSection() {
                 </div>
                 
                 {/* Content */}
-                <div className="p-6">
+                <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-2xl font-bold text-bright-cyan mb-6 text-center group-hover:text-cyan-300 transition-colors duration-300">
                     {category.category}
                   </h3>
-                  <div className="flex flex-wrap justify-center gap-3">
+                  <div className="flex flex-wrap justify-center gap-3 flex-1 items-start">
                     {category.skills.map((skill, skillIndex) => (
                       <motion.span
                         key={skill}
